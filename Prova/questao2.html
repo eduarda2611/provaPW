@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clientes </title>
+</head>
+<body>
+    <script>
+    
+    let clientes = ["Lucas","Ana","Maria","Eduarda","Carla","Mirna","José"]; //Inicialização da variável "clientes" + array = Vetor
+
+    let result = false; //Inicialização da variável "result"
+    let busca = "Eduarda"; //Inicialização da variável "busca"
+
+    for (const nome of clientes){ //Estrutura de repetição "For Of", na qual a cada iteraçao, o valor de uma propriedade diferente é atribuido a variavel "nome"; "clientes", que é o objeto cujo atributos serão iterados
+        if (nome == busca){  //Condição definida para "nome=busca"
+            result = true; //Caso o nome seja encontrado por meio da condição anterior, o resultado será "verdadeiro"
+            console.log(result); //Exibe o valor "true", indicado na variável "result"
+        }
+    }
+    </script>
+</body>
+</html>

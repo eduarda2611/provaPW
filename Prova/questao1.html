@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistema de Avaliação Online </title>
+</head>
+<body>
+    <script>
+        let av = { //Inicialização da variável "av"
+
+        titulo: "Sistema de Avaliação Online", // Propriedade 
+        url: "https://www.sistemaOnlineAv.com.br", //Propriedade
+        tags: ["Biologia","História","Matemática","Português"], //Array dentro do atributo "tags"
+        disciplinasTecnicas: { //Atributos inseridos na propriedade "disciplinasTecnicas"
+            adm: ["Direito do Consumidor","Marketing"], //Array dentro do atributo "adm"
+            info: ["HTML","PHP","JavaScript"], //Array dentro do atributo "info"
+            enf: ["Saúde da Muher","Primeiro Socorros"], //Array dentro do atributo "enf"
+        }
+        
+        ,nomeES:function(){ //Método do objeto + função 
+            console.log("EEEP Amélia Figueiredo") //Exibe o valor referente à função
+            }
+    }
+        console.log(av.titulo); //Exibe o valor inserido na propriedade "título"
+        console.log(av.url); //Exibe o valor inserido na propriedade "url"
+        console.log(av.tags[2]); //Exibe a terceira disciplina do array, inserido no atributo "tags"
+        console.log(av.disciplinasTecnicas.adm[1]); //Exibe a segunda disciplina do array inserido no atributo "adm", da referida propriedade
+        av.nomeES(); //Variável "av" + método do objeto
+    </script>
+</body>
+</html>

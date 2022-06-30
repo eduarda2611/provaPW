@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Salário </title>
+</head>
+<body>
+    <script>
+
+        let salarios = [1200,1400,1500,1250,1530,1600] //Inicialização da variável "salarios" + array 
+    let tamanho = salarios.length; //Inicialização da variável "tamanho", na qual irá contêr o comprimento da string
+    let maiorNum = 0; //Inicialização da variável "maiorNum"
+    for (let cont = 0; cont < tamanho; cont++){ //Inicialização da condição "For" + Criação da variável "Cont" + Decisão "O cont irá parar quando ele for menor que 'tamanho' + Incremento"
+        if (maiorNum < salarios[cont]){ //Condição na qual incorpora as variaveis "maiorNum" e "salarios"
+            maiorNum = salarios[cont] //Comparação das variáveis para identificar o maior valor + Atribuição desse valor
+        }
+    }
+    console.log(maiorNum) //Exibe o valor do maior salário
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cálculo do Salário </title>
+</head>
+<body>
+    <script>
+
+        //Utilizaçao da condição de seta (arrow)
+
+        let calSalario = (base = 1200, gratificacao = 0, ajuste = 1.1) => { // Inicialização da variável "calSalario", na qual receberá o valor predefinid da base, da gratificaçao e do ajuste
+        return `Salário: ${(base * ajuste) + gratificacao}`; // Retorna o valor do salário calculado
+      };
+      console.log(calSalario()); //Exibe o cálculo feito por meio dos valores predefinidos
+      console.log(calSalario(1300)); //Exibe a substituição do valor definido na "base"
+      console.log(calSalario(1400,100,1.2)); //Exibe a substituição dos valores definidos na sequência: "base", "gratificação" e "ajuste"
+
+    </script>
+</body>
+</html>
